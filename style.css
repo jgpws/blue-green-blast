@@ -1,0 +1,517 @@
+/*
+* Theme Name: Blue Green Blast
+* Theme URI: http://www.jasong-designs.com/2011/04/25/blue-green-blast/
+* Description: Blue Green Blast is an attractive theme that uses a complimentary blue-green and red-orange color scheme. It features two widget-friendly sidebars, a custom login section and a custom searchbox.
+* Author: Jason Gonzalez
+* Author URI: http://www.jgpws.com/portfolio/
+* License: General Public License, version 3
+* License URI: http://www.gnu.org/copyleft/gpl.html
+* Tags: two-columns, right-sidebar
+* Version: 0.3.5
+*/
+
+/* General styles */
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #A64B00; /* sets foreground color; usually applies to fonts */
+	background-color: #00BBBB;
+	font-family: Arial, Helvetica, "Nimbus Sans L"/*Linux*/, sans-serif;
+	/* I included one Linux friendly font. See http://mondaybynoon.com/2007/04/02/linux-font-equivalents-to-popular-web-typefaces/ */
+	font-size: 0.9em;
+}
+
+p {
+	margin: 0 0 1em 0;
+	/*font-size: 0.9em;*/
+}
+
+p, blockquote, ul li, ol li, dt, dd {
+	line-height: 1.3em;
+}
+
+blockquote {
+	background-color: #FFE8D5;
+	padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0; /* reset margins */
+	padding: 0.2em 0 0.2em 0;
+	font-family: Georgia, "Times New Roman", "Nimbus Roman No9 L"/*Linux*/, serif;
+	font-weight: bold;
+}
+
+/* custom heading sizes */
+h1 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+h4 {
+	font-size: 12px;
+}
+
+h5 {
+	font-size: 10px;
+}
+
+h6 {
+	font-size: 8px;
+}
+
+/* link styles */
+a:visited, a:link {
+	color: #FF7400;
+}
+
+a:active, a:hover {
+	color: #BF7130;
+}
+
+img {
+	margin: 1em;
+}
+
+img a {
+	border: none;
+}
+
+pre {
+	width: 409px;
+	overflow: auto;
+	padding: 10px;
+}
+
+/* WordPress specific tags */
+
+img.alignleft {
+	float: left;
+}
+
+img.alignright {
+	float: right;
+}
+
+img.aligncenter {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.wp-caption-text, .gallery-caption {
+	font-size: 0.7em;
+	font-weight: bold;
+	text-align: center;
+}
+
+#content .wp-caption-text:first-letter {
+	font: bold 100% Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+
+/* for emoticons */
+#content .wp-smiley {
+	margin: 0;
+	padding: 0;
+}
+
+.sticky {
+
+}
+
+/* Div styles */
+
+/* wrapper */
+#wrapper {
+	width: 760px;
+	border: 10px solid #63DDDD; /* adds a border outside of our width */
+	margin: 0 auto; /* centers the layout in standards based browsers */
+	background: url(images/content_bg.png) repeat-y;
+}
+
+/* header */
+#header {
+	width: 100%; /* header is as wide as our containing element, the wrapper */
+	height: 120px; /* height from our layout */
+	background: url(images/header-footer_bg.png) repeat-y; /* place our background image and repeat it vertically */
+}
+
+#header h1 {
+	padding-top: 60px; /* set a large padding up top to push the heading down */
+}
+
+#header h1 a:visited, #header h1 a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#header p {
+	color: #FFFFFF;
+	font-family: Georgia, "Times New Roman", "Nimbus Roman No9 L"/*Linux*/, serif;
+	font-style: italic;
+	margin-top: -6px;
+}
+
+#left {
+	width: 449px; /* width is set minus the 20px left padding, according to the CSS box model */
+	height: 120px; /* height repeated here */
+	padding: 0 0 0 20px; /* add padding to the left side */
+	float: left; /* float left */
+}
+
+#sidebar-2 {
+	width: 271px;
+	padding: 0 0 0 20px; /* add padding to the left side */
+	float: right;
+	height: 120px;
+}
+
+#sidebar-2 #searchform input#s {
+	border-top: 1px solid #666666;
+	border-left: 1px solid #666666;
+	border-bottom: 1px solid #EEEEEE;
+	border-right: 1px solid #EEEEEE;
+	color: #666666;
+	background-color: #CCCCCC;
+	margin-right: 6px;
+}
+
+/* content */
+#content {
+	width: 429px; /* width is set minus the 20px padding, according to the CSS box model */
+	padding: 20px; /* add padding */
+	float: left;
+}
+
+#content p:first-letter {
+	font: bold 200% Georgia, "Times New Roman", "Nimbus Roman No9 L"/*Linux*/, serif; /* style our drop cap, but only in the content div */
+}
+
+#content form p:first-letter, #content ol.commentlist p:first-letter {
+	font: normal 100% Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+
+/* sidebar */
+#sidebar {
+	width: 251px; /* width is set minus the 20px padding, according to the CSS box model */
+	padding: 20px; /* add padding */
+	float: left;
+	font: bold 12px/18px Georgia, "Times New Roman", "Nimbus Roman No9 L"/*Linux*/, serif;
+}
+
+#sidebar a {
+	text-decoration: none;
+}
+
+#sidebar a:visited, #sidebar a:link {
+	color: #FFB273;
+}
+
+#sidebar a:active, #sidebar a:hover {
+	color: #FFFFFF;
+}
+
+#sidebar img {
+margin: 0;
+}
+
+#sidebar ul {
+	margin-left: 0; /* IE 7 */
+	padding-left: 0;
+}
+
+#sidebar ul li {
+	padding-bottom: 20px;
+	line-height: 1.5em;
+}
+
+#sidebar ul ul {
+	margin-left: 18px;
+}
+
+#sidebar ul ul ul {
+	margin-left: 0;
+}
+
+#sidebar ul li li {
+	list-style-image: url(images/redpixelbullet.png);
+	padding-bottom: 0;
+	line-height: 1.5em;
+}
+
+#sidebar ul li li li {
+	list-style-image: url(images/arrowbullet_red.png);
+}
+
+#sidebar ul li li li li {
+	list-style-image: url(images/arrowbullet_gray.png);
+}
+
+#sidebar ul, #sidebar-2 ul {
+	list-style-type: none;
+}
+
+/* sidebar 2 */
+#sidebar-2 ul {
+	margin: 0;
+	padding: 80px 0 0 0;
+}
+
+/* footer */
+#footer {
+	clear: both; /* clears everything above, placing the footer below everything in our wrapper */
+	background: url(images/header-footer_bg.png) repeat-y;
+	width: 760px;
+	padding: 10px 20px 10px 20px; /* sets the padding 10px top, 20px right, 10px bottom, 20px right */
+}
+
+#footer-left {
+	width: 429px;
+}
+
+#footer-right {
+	width: 271px;
+}
+
+#footer p {
+	font-family: Georgia, "Times New Roman", "Nimbus Roman No9 L"/*Linux*/, serif;
+	color: #FFFFFF;
+}
+
+#footer a:visited, #footer a:link {
+	color: #FFFFFF;
+}
+
+#logos-panel {
+	clear: both;
+	padding: 10px 0 10px 0;
+	margin: 10px 0 10px 0;
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+#logos-panel img {
+	margin: 0;
+	padding: 0 5px 0 5px;
+	border-style: none;
+}
+
+/* classes and ids */
+.widgettitle {
+	background: url(images/button.png) no-repeat;
+	width: 160px;
+	height: 40px;
+	padding: 12px 0 0 12px;
+	color: #FF7400;
+}
+
+.entry {
+	overflow-y: auto;
+}
+
+.entry-title a:visited, .entry-title a:link {
+	color: #FF7400;
+	text-decoration: none;
+}
+
+.entry-title a:active, .entry-title a:hover {
+	text-decoration: underline;
+}
+
+.postdata {
+	color: #00BBBB;
+	margin: -6px 0 6px 0;
+}
+
+.post {
+	padding-bottom: 20px;
+}
+
+.navigation {
+	font: bold 12px Georgia, "Times New Roman", "Nimbus Roman No9 L"/*Linux*/, serif;
+	padding-bottom: 20px;
+}
+
+.navigation a:visited, .navigation a:link {
+	color: #FF7400;
+	text-decoration: none;
+}
+
+.navigation a:active, .navigation a:hover {
+	text-decoration: underline;
+}
+
+.login-message {
+	color: #FFFFFF;
+}
+
+.author-link {
+	font-size: 10px;
+}
+
+/* Single page classes */
+body.single .entry-title {
+	color: #000000;
+	background-color: #63DDDD;
+	margin-bottom:10px;
+	padding-left: 10px;
+}
+
+body.single .post {
+	border-bottom: 2px solid #63DDDD;
+	padding-bottom: 20px;
+}
+
+/* Comment template */
+#commentform textarea {
+	width: 429px;
+}
+
+#content form p:first-letter, 
+#content ol.commentlist p:first-letter /*2.9 and below*/,
+#content ul.commentlist p:first-letter {
+	font: normal 100% Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+
+#respond h3 {
+	padding-bottom: 20px;
+}
+
+#commentform p, .commentlist li {
+	padding-bottom: 10px;
+}
+
+.comment-meta {
+	font: bold 12px Georgia, "Times New Roman", "Nimbus Roman No9 L", serif;
+}
+
+#commentform input, #commentform textarea {
+	background-color: #CCCCCC;
+	border-top: 1px solid #666666;
+	border-left: 1px solid #666666;
+	border-bottom: 1px solid #EEEEEE;
+	border-right: 1px solid #EEEEEE;
+	color: #000000;
+	margin: 0 5px;
+}
+
+#commentform input#submit {
+	border-top: 1px solid #EEEEEE;
+	border-left: 1px solid #EEEEEE;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+}
+
+.bypostauthor {
+	border: 1px solid #CCCCCC;
+	background-color: #EEEEEE;
+	color: #666666;
+	padding: 10px;
+}
+
+.commentlist p:before {
+	content: url(images/speech_bubble.gif);
+	margin-right: 6px;
+}
+
+/* Page classes */
+body.page .entry-title {
+	color: #000000;
+	background-color: #FFB273;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+
+/* Archive page classes */
+.archive-title {
+	color: #000000;
+	background-color: #CCCCCC;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+
+/* Category page classes */
+.category-title {
+	color: #FFFFFF;
+	background-color: #FF7400;
+	margin-bottom: 10px;
+	padding-left: 10px;
+}
+
+/* Feed Icons */
+.feedicon {
+	padding-right: 6px;
+}
+
+/* Calendar */
+#calendar_wrap {
+	width: 251px;
+	padding-top: 20px;
+}
+
+#wp-calendar {
+	margin: 0 auto; /* works in standards browsers */
+	background-color: #FFFFFF;
+	padding: 10px;
+	width: 130px;
+}
+
+#wp-calendar a:hover {
+	color: #FF7400;
+	text-decoration: underline;
+}
+
+#wp-calendar caption {
+	background-color: #FFB273;
+	color: #000000;
+	text-align: center;
+}
+
+#wp-calendar thead {
+	background-color: #CCCCCC;
+	color: #000000;
+}
+
+#wp-calendar tbody {
+	font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	color: #666666;
+}
+
+/* Special Widgets classes */
+#sidebar .widget-title a:link, #sidebar .widget-title a:visited {
+	color: #FF7400;
+}
+
+
+/* Adsense classes */
+.ad250-floatleft, .ad125button-floatleft {
+	float: left;
+	margin: 0;
+	padding: 0 1em 1em 0;
+}
+
+.ad250-floatleft img, .ad125button-floatleft img,
+.ad250-floatright img, .ad125button-floatright img {
+margin: 0;
+}
+
+.ad250-floatright, .ad125button-floatright {
+	float: right;
+	padding: 0 0 1em 1em;
+}
+
+.ad120tower, .ad125button {
+	width: 125px;
+	margin: 0 auto; /* does not work in IE6 or IE7 */
+                /* use code below for IE6 and IE7 */
+	/*text-align: center*/
+	padding: 1em 0 1em 0;
+}

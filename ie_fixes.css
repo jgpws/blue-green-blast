@@ -1,0 +1,30 @@
+body {
+	text-align: center; /* centers layout in IE */
+}
+
+#wrapper {
+	text-align: left; /* aligns text left in the wrapper div- everything else */
+}
+
+#header {
+}
+
+#left {
+	width: 469px; /* IE excludes padding from the total width, instead placing it outside the width */
+}
+
+#sidebar-2 {
+	/* leave this width as is */
+}
+
+#content {
+	width: 469px;
+}
+
+#sidebar {
+	width: 271px;
+}
+
+#footer {
+	width: 740px;
+}

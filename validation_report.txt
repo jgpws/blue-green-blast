@@ -1,0 +1,10 @@
+Web pages in this theme were successfully validated as XHTML 1.0 Transitional. I used the View Source browser feature to see the generated pages and validated via the Direct Input method. 
+http://validator.w3.org/
+
+index.php (first page)
+single.php example (a post page)
+page.php example (a page)
+category.php example (a category results page)
+archive.php example (an archive results page)
+
+CSS Stylesheet (style.css) validates at http://jigsaw.w3.org/css-validator/
