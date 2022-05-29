@@ -5,7 +5,7 @@
 Old school, legacy theme for WordPress with a blue green/red orange color scheme.
 
 ## Installation Instructions
-* Click the **Clone or download** button, then from the dropdown, **Download ZIP**
+* Click the **Code** button, then from the dropdown, **Download ZIP**
 * This will likely download to a Downloads or My Downloads folder on your computer
 
 ### Upload to WordPress
